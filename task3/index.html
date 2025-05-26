@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learnify - Your Online Learning Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f5f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-weight: 600;
+      font-size: 1.8rem;
+      cursor: default;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffb400;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581092334314-9ae8a364d2be?auto=format&fit=crop&w=1470&q=80') no-repeat center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 0 2rem;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+    .btn-primary {
+      background: #ffb400;
+      color: #222;
+      padding: 0.75rem 2rem;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background: #e69500;
+    }
+
+    /* Courses Section */
+    .courses {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #222;
+    }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .course {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .course:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .course img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .course-content {
+      padding: 1rem 1.5rem;
+    }
+    .course-content h3 {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: #333;
+    }
+    .course-content p {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .course-content .btn-secondary {
+      background: #4a90e2;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .course-content .btn-secondary:hover {
+      background: #357abd;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Nav for small screens */
+    @media(max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+      nav a {
+        margin: 0 0.75rem;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Learnify</h1>
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Unlock Your Potential with Learnify</h2>
+      <p>Explore hundreds of courses and start learning anytime, anywhere.</p>
+      <a href="#courses" class="btn-primary">Browse Courses</a>
+    </div>
+  </section>
+
+  <section class="courses" id="courses">
+    <h2 class="section-title">Featured Courses</h2>
+    <div class="course-grid">
+      <div class="course" tabindex="0">
+        <img src="https://m.media-amazon.com/images/I/61TxF-z-6qL._AC_UF1000,1000_QL80_.jpg" alt="Programming Course" />
+        <div class="course-content">
+          <h3>Mastering JavaScript</h3>
+          <p>Learn the fundamentals and advanced topics of JavaScript programming.</p>
+          <button class="btn-secondary" onclick="enroll('Mastering JavaScript')">Enroll Now</button>
+        </div>
+      </div>
+      <div class="course" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=60" alt="Business Course" />
+        <div class="course-content">
+          <h3>Business Management Basics</h3>
+          <p>Develop your skills to lead and manage teams effectively.</p>
+          <button class="btn-secondary" onclick="enroll('Business Management Basics')">Enroll Now</button>
+        </div>
+      </div>
+      <div class="course" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Design Course" />
+        <div class="course-content">
+          <h3>Graphic Design Essentials</h3>
+          <p>Explore the core principles of graphic design and creative tools.</p>
+          <button class="btn-secondary" onclick="enroll('Graphic Design Essentials')">Enroll Now</button>
+        </div>
+      </div>
+      <div class="course" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=60" alt="Science Course" />
+        <div class="course-content">
+          <h3>Introduction to Physics</h3>
+          <p>Understand the fundamental laws and concepts of physics.</p>
+          <button class="btn-secondary" onclick="enroll('Introduction to Physics')">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="padding: 2rem; max-width: 900px; margin: 3rem auto;">
+    <h2 class="section-title">About Learnify</h2>
+    <p style="text-align:center; font-size:1.1rem; color:#555;">
+      Learnify is a modern e-learning platform dedicated to empowering learners worldwide.  
+      Our mission is to provide accessible, high-quality courses across diverse subjects to help you grow your skills and advance your career.
+    </p>
+  </section>
+
+  <section id="contact" style="background:#4a90e2; color:white; padding: 2rem; text-align:center;">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:support@learnify.com" style="color:#ffb400;">support@learnify.com</a></p>
+    <p>Phone: +1 (555) 987-6543</p>
+    <p>Address: 123 Learning St, Knowledge City, USA</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Learnify. All rights reserved.
+  </footer>
+
+  <script>
+    function enroll(courseName) {
+      alert(`You have enrolled in "${courseName}"! Welcome aboard 🎉`);
+    }
+  </script>
+  
+</body>
+</html>
