@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EliteMart - Premium Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4C+XJtXc8rT9nZbSz3ZxV0B5e1T2DPiVOPlc3B6s6q/6L7o8gB1bN6PgU6j8VpThwx9eg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>SweetyMart</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#🛒cart">Cart</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <h2>Shop Smart, Live Better</h2>
+      <p>Discover premium quality products just a click away</p>
+      <a href="#products" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2 class="section-title">Top Picks for You</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/41NK8-mPsUL._AC_UY1100_.jpg" alt="Leather Bag" />
+        <h3>Classic Leather Bag</h3>
+        <p class="price">$120.00</p>
+        <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/w/g/q/-original-imahfxv2xdek2wga.jpeg?q=90&crop=false" alt="Sneakers" />
+        <h3>Urban Sneakers</h3>
+        <p class="price">$79.99</p>
+        <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25626687/DSC08433.jpg?quality=90&strip=all&crop=16.675%2C0%2C66.65%2C100&w=2400" alt="Smartphone" />
+        <h3>Smartphone X</h3>
+        <p class="price">$699.99</p>
+        <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/51f7KKP25PL._AC_UF1000,1000_QL80_.jpg" alt="Headphones" />
+        <h3>Noise Cancelling Headphones</h3>
+        <p class="price">$159.00</p>
+        <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart" style="padding: 2rem; background: #f9f9f9;">
+    <h2 class="section-title">Your Cart Items</h2>
+    <ul class="cart-list" style="list-style: none; padding: 0;">
+      <li style="display: flex; align-items: center; margin-bottom: 1rem;">
+        <img src="https://m.media-amazon.com/images/I/41NK8-mPsUL._AC_UY1100_.jpg" alt="Leather Bag" style="width: 60px; margin-right: 1rem;" />
+        <div>
+          <strong>Classic Leather Bag</strong><br />
+          Quantity: 1<br />
+          Price: $120.00
+        </div>
+      </li>
+      <li style="display: flex; align-items: center; margin-bottom: 1rem;">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/w/g/q/-original-imahfxv2xdek2wga.jpeg?q=90&crop=false" alt="Sneakers" style="width: 60px; margin-right: 1rem;" />
+        <div>
+          <strong>Urban Sneakers</strong><br />
+          Quantity: 2<br />
+          Price: $159.98
+        </div>
+      </li>
+    </ul>
+    <p><strong>Total: $279.98</strong></p>
+  </section>
+
+  <footer id="contact" style="background-color: #222; color: #eee; padding: 2rem; margin-top: 2rem;">
+    <h2>Contact Us</h2>
+    <p><i class="fas fa-user"></i> John Doe</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:contact@elitemart.com" style="color: #eee;">contact@elitemart.com</a></p>
+    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+    <p>&copy; 2025 EliteMart. Designed with style and love.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
